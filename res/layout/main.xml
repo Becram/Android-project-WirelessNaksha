@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarAlwaysDrawVerticalTrack="false">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="614dp"
+        android:background="#287080"
+        android:orientation="vertical" >
+
+    <!-- Included header.xml here -->
+
+    <ViewStub
+        android:id="@+id/vsHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/header"
+        android:layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="605dp"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_btn_map"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/mapppp"
+                android:onClick="onButtonClicker"
+                android:text="@string/AvailableActivityTitle"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/black" />
+
+            <Button
+                android:id="@+id/main_btn_connwifi"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/phonestst"
+                android:onClick="onButtonClicker"
+                android:text="@string/ConectedActivityTitle"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/black" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/inputemailid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Enter your E-mail ID" />
+
+            <Button
+                android:id="@+id/SendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/inputemailid"
+                android:text="Send Me Stored Data" />
+
+            <TextView
+                android:id="@+id/Internet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/SendButton"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="10dp"
+                android:text="Read Me"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Internet"
+                android:layout_marginTop="27dp"
+                android:textColor="#ffffff"
+                android:text="@string/ifotesy" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

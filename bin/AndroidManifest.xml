@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.becram.wirelessnakshav1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+         />
+     <permission
+        android:name="com.becram.wirelessnakshav1.permission.MAPS_RECEIVE" 
+        android:protectionLevel="signature" />
+     <uses-permission android:name="com.becram.wirelessnakshav1.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+      <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/STBTheme"
+         >
+          <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.becram.wirelessnakshav1.Map_Activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".PhoneStatus"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Con_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name=".Available_Activity"
+            android:label="@string/app_name" >
+        </activity>
+         
+        <activity
+            android:name=".Visitsite_Activity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name=".FeedbackActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCklJytnElqt9EQRz9DrQtOGaSH64jlNKU" />
+         <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="4030500" />
+         
+    </application>
+
+</manifest>

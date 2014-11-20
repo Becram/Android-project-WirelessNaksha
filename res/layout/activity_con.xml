@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck"
+   
+     >
+     <ViewStub android:id="@+id/vsHeader" 
+	    android:inflatedId="@+id/header" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:layout="@layout/header" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/carrierid"
+        android:layout_alignBottom="@+id/carrierid"
+        android:layout_alignLeft="@+id/tv"
+        android:text="scanning..." 
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/GSMstrength"
+        android:text="Scanning...."
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/carrierid"
+        android:layout_below="@+id/carrierid"
+        android:layout_marginTop="22dp"
+        android:text="Speed:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/GSMstrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_alignLeft="@+id/textView4"
+        android:text="Scanning"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="18dp"
+        android:text="Ip Add:" 
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignLeft="@+id/textView8"
+        android:text="Scanning" 
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="78dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/text"
+        android:text="Scanning..."
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv"
+        android:layout_alignBottom="@+id/tv"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="Access Point:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/carrierid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Internet"
+        android:layout_below="@+id/Internet"
+        android:layout_marginTop="18dp"
+        android:text="BSSID:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/carrierid"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="22dp"
+        android:text="Strength:"
+        android:textSize="20sp" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="DigitalClock" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/text"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="14dp"
+        android:progress="75"
+        android:progressDrawable="@drawable/progressbar2" />
+
+</RelativeLayout>

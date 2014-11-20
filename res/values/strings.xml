@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WirelessNakshaV1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="MapActivityTitle">Signal Map</string>
+    <string name="hello">WirelessNaksha v1</string>
+    
+
+    <string name="txtDemo">Visit www.wirelessnaksha.com</string>
+    
+    <!-- Activity Titles -->
+    <string name="HomeActivityTitle">WirelessNaksha v1 Everything about signal</string>
+    <string name="FeedbackActivityTitle">Feedback</string>
+    <string name="AvailableActivityTitle">Start Data collection</string>
+    <string name="ConectedActivityTitle">Phone status </string>
+    <string name="VisitActivityTitle">Visit Website</string>
+    <string name="AboutActivityTitle">About Us</string>
+    <string name="ifotesy">This is the first prototype app of project WirelessNaksha for data collecction purpose only
+        		           "WORKING" 
+        		            As you start this app it leads you to GPS setting (if GPS is disabled)
+        		      
+        		            On start it starts collecting signal and wireless info and stores in local data base,every 10 sec and when user changes their position.Users are requested to send data to server by pressing the Push2Server button manually on avaibility of internet
+        		      
+        		           *For more info visit www.wirelessnaksha.com* </string>
+     
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_phone_status">Phone Status</string>
+    <string name="title_activity_phone">Cellphone Data</string>
+	<string name="tvPhoneStatus">Phone Status</string>
+	
+	<string name="tvServiceState">Service State : </string>
+	<string name="tvCellLocation">Cell Location : </string>
+	<string name="tvCallState">Call State : </string>
+	<string name="tvConnState">Connection State : </string>
+	<string name="tvSignalLevel">Signal Level : </string>
+	<string name="strData">Data : </string>
+    
+    
+    
+    
+    
+   
+    
+    
+
+</resources>
